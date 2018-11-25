@@ -1,5 +1,5 @@
 
-#Seleção S2.it
+# Seleção S2.it
 
 ## 1 - Acerca de sistemas de desenvolvimento web, assinale a opção correta.
 
@@ -22,7 +22,7 @@ B - JBoss.
 
 C - WebLogic. 
 
-D - Jetty. 
+**D - Jetty.**
 
 E - WebSphere. s
 

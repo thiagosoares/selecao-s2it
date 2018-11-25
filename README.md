@@ -29,15 +29,15 @@ E - WebSphere. s
 
 ## 3 - São apenas tipos de componentes executados em servidores Web:
 
-A - Beans, Servlets e J2EE.
+A - Beans, Servlets e ~J2EE~.
 
-B - JVM, Servlets e JSP.
+B - ~JVM~, Servlets e JSP.
 
-C - Beans, Servlets e JSP.
+**C - Beans, Servlets e JSP.**
 
-D - Beans, Swing e JSP.
+D - Beans, ~Swing~ e JSP.
 
-E - Beans, Swing e JVM.
+E - Beans, ~Swing~ e ~JVM~.
 
 ## 4 - Analise os itens a seguir sobre JEE e EJB.
 

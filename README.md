@@ -77,9 +77,11 @@ E - A porta de entrada do navegador web para a arquitetura Spring MVC Web é a ~
 
 ## 6 - No Spring, as configurações de segurança são realizadas no arquivo applicationContext-security.xml, e, para que qualquer página ou diretório seja seguro, é necessário adicionar a esse arquivo o elemento <intercept-url>. 
 
-C - Certo
+**C - Certo**
 
 E - Errado
+
+(`O xsd deste arquivo informa que ele não é obrigatório. A não utilização desta TAG na Role de segurança fará com que esta Role seja aplicada indistintamente, em todas as páginas. Apesar de não ser obrigatória, é difícil imaginar um caso real em que ele realmente não seja necessária. Por isso marco a assertiva como CERTA`)
 
 
 

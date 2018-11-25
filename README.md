@@ -89,5 +89,10 @@ E - Errado
 tópico de mensagens para auxílio no desenvolvimento de sistemas complexos. Nesse
 modelo, o desenvolvedor master não sabe da existência do desenvolvedor associado e
 vice-versa.
+
 C - Certo
-E – Errado
+
+**E – Errado**
+
+(`O destinatário precisará conhecer o remetente para então se inscrever no referido tópico. O que não significa que haja um acoplamento entre emissor e destinatário, não. Por outro lado, o emissor não preciso conhecer todos os seus destinatários para  poder executar o delivery. `)
+

@@ -9,9 +9,7 @@ public class NumberContatTests {
 
 	@Test
 	public void testZero() {
-		
 		assertThat(NumberContat.buildTheThird(0, 0)).isEqualTo(0);
-		
 	}
 	
 	@Test
@@ -22,12 +20,9 @@ public class NumberContatTests {
 	
 	@Test
 	public void hitMillion() {
-		
 		assertThat(NumberContat.buildTheThird(1111, 111)).isNotEqualTo(0);
 		assertThat(NumberContat.buildTheThird(1111, 111)).isEqualTo(-1);
-		
 	}
-	
 	
 	@Test
 	public void testHappy01() {

@@ -51,7 +51,7 @@ IV. Um session bean representa um único cliente dentro do servidor J2EE. Para a
 
 Está correto o que se afirma em:
 
-A - I, II, III e IV.
+**A - I, II, III e IV.**
 
 B - I e II, apenas.
 

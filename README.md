@@ -65,13 +65,14 @@ E - III e IV, apenas.
 ## 5 - Spring Framework é uma plataforma Java completa que fornece suporte de infraestrutura para o desenvolvimento de aplicações Java. Acerca das características do framework Spring 3.0, assinale a opção correta.
 
 A - Na arquitetura Spring MVC Web, o Validator é uma classe opcional que pode ser invocada para validar dados de formulários.
-B - A injeção de dependência é feita após a criação do objeto, por meio dos métodos set de uma classe no estilo JavaBean, e não no momento da criação do objeto, tendo-se em vista que passar muitos argumentos no construtor pode tornar-se dispendioso.
 
-C - A interface BeanFactory gerencia beans definidos em arquivos XML e trata recursos de mensagens.
+B - A injeção de dependência é feita após a criação do objeto, por meio dos métodos ~set~ de uma classe no estilo JavaBean, e não no momento da criação do objeto, ~tendo-se em vista que passar muitos argumentos no construtor pode tornar-se dispendioso~. (`Inicializar as dependência via construtor é exatamente a estratégia preferida pelo framework. Além de tudo, esta estratégia torna a Bean muito mais fácil de testar`)
 
-D - O controlador AbstractWizardFormController, do módulo Spring MVC, permite suporte para o preenchimento de formulários a partir de determinada solicitação.
+C - A interface BeanFactory ~gerencia~ beans definidos em arquivos XML e trata recursos de mensagens. (`A classe BeanFactory está mais voltada para o ACESSO aos Beans que para a sua gerência.`)
 
-E - A porta de entrada do navegador web para a arquitetura Spring MVC Web é a componente Interface (JSP/HTML).
+D - O controlador AbstractWizardFormController, do módulo Spring MVC, permite suporte para o preenchimento de formulários a partir de determinada solicitação. (`Esta classe permite construir wuzards com os formulários, controlando fluxos e estados. Algo pareciso com o que o JBmp faz. Não exatamente a manipulação de fields.`)
+
+E - A porta de entrada do navegador web para a arquitetura Spring MVC Web é a ~componente Interface (JSP/HTML)~. (`Seriam os Servlets`)
 
 
 ## 6 - No Spring, as configurações de segurança são realizadas no arquivo applicationContext-security.xml, e, para que qualquer página ou diretório seja seguro, é necessário adicionar a esse arquivo o elemento <intercept-url>. 

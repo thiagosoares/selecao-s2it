@@ -7,6 +7,8 @@ public class BinaryTree {
 	private BinaryTree left;
 
 	private BinaryTree right;
+	
+	private String side;
 
 	public BinaryTree() {
 		super();
@@ -16,6 +18,13 @@ public class BinaryTree {
 	public BinaryTree(int value) {
 		super();
 		this.value = value;
+	}
+	
+	// Root tree constructor with side
+	public BinaryTree(int value, String side) {
+		super();
+		this.value = value;
+		this.side = side;
 	}
 
 	// Leaves tree constructor
@@ -55,7 +64,8 @@ public class BinaryTree {
 	
 			// The tree does not have a right child node
 			if (parente.right == null) {
-	
+
+				node.isRight();
 				parente.right = node;
 	
 			} else {
@@ -69,6 +79,7 @@ public class BinaryTree {
 			// The tree does not have a left child node
 			if (parente.left == null) {
 	
+				node.isLeft();
 				parente.left = node;
 	
 			} else {
@@ -77,6 +88,13 @@ public class BinaryTree {
 				insert(parente.left, node);
 			}
 		}
+	}
+	
+	public void isLeft() {
+		this.side = "L";
+	}
+	public void isRight() {
+		this.side = "R";
 	}
 	
 	public int getValue() {
@@ -89,6 +107,12 @@ public class BinaryTree {
 	
 	public BinaryTree getLeft() {
 		return this.left;
+	}
+	
+	@Override
+	public String toString() {
+		return "{\"side\": \""+this.side+"\", \"value\":" + this.value + ", \"left\":" + this.left + ", \"right\":"+ this.right + "}";
+		//return "{\"side\": "+this.right+"}";
 	}
 }
 

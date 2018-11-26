@@ -26,8 +26,11 @@ public class BinaryTree {
 		this.right = right;
 	}
 
+	// Resursive Sum
 	public int sum() {
-		return 0;
+		return this.value + 
+			  (this.left == null ? 0 : this.left.sum()) + 
+			  (this.right == null ? 0 : this.right.sum());
 	}
 
 	public void insert(int value) {

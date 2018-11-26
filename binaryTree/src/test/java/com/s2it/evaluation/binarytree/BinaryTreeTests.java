@@ -18,6 +18,18 @@ public class BinaryTreeTests {
 	public void testInsert() {
 		this.tree.insert(1);
 	}
+	
+	@Test
+	public void testInsert2() {
+		this.tree.insert(10);
+		this.tree.insert(5);
+		this.tree.insert(20);
+		
+		assertThat(this.tree.getLeft()).isNotNull();
+		assertThat(this.tree.getLeft().getValue()).isEqualTo(5);
+		assertThat(this.tree.getRight()).isNotNull();
+		assertThat(this.tree.getRight().getValue()).isEqualTo(20);
+	}
 
 	@Test
 	public void testSumZero() {
@@ -30,3 +42,4 @@ public class BinaryTreeTests {
 		assertThat(this.tree.sum()).isEqualTo(1);
 	}
 }
+

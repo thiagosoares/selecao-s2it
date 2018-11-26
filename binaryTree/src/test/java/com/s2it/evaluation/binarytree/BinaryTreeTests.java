@@ -164,7 +164,6 @@ public class BinaryTreeTests {
 		this.tree.insert(6);
 		this.tree.insert(3);
 		
-		System.out.println(this.tree);
 		assertThat(this.tree.toString()).isEqualTo("{\"side\": \"null\", \"value\":8, \"left\":{\"side\": \"L\", \"value\":6, \"left\":{\"side\": \"L\", \"value\":3, \"left\":null, \"right\":null}, \"right\":null}, \"right\":{\"side\": \"R\", \"value\":15, \"left\":null, \"right\":{\"side\": \"R\", \"value\":20, \"left\":null, \"right\":null}}}");
 	}
 }

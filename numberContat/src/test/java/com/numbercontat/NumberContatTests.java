@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class NumberContatTests {
 
-
 	@Test
 	public void testZero() {
 		assertThat(NumberContat.buildTheThird(0, 0)).isEqualTo(0);
@@ -15,8 +14,10 @@ public class NumberContatTests {
 	@Test
 	public void happyExerciseExample() {
 		assertThat(NumberContat.buildTheThird(10256, 512)).isNotEqualTo(0);
-		// assertThat(NumberContat.buildTheThird(10256, 512)).isEqualTo(15012256);
 		assertThat(NumberContat.buildTheThird(10256, 512)).isEqualTo(-1);
+		// Esta situação não é possível
+		// assertThat(NumberContat.buildTheThird(10256, 512)).isEqualTo(15012256);
+		
 	}
 	
 	@Test
